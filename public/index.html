@@ -27,7 +27,12 @@
   <div class="row">
     <div class="col">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Rougette_Ofenk%C3%A4se_nach_dem_Fertigbacken_5059.jpg/800px-Rougette_Ofenk%C3%A4se_nach_dem_Fertigbacken_5059.jpg"  alt="Ofenkäse" style="width:100%;">
-        <div class="centered">o-cheese-us</div>
+        <div class="centered">
+		o-cheese-us
+		<br>
+			<button onclick="addCheese()">Kas gfressn!</button>
+		</div>
+		
     </div>
   </div>
 </div>
@@ -53,6 +58,20 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+  function addCheese() {
+	const db = firebase.firestore();
+	const increment = firebase.firestore.FieldValue.increment(1);
+
+	// Document reference
+	const storyRef = db.collection('COUNTER').doc('GLOBAL');
+
+	// Update read count
+	storyRef.update({ wiavuigfressn: increment });
+}
+  
+	
+	
 </script>
 </body>
 </html>
