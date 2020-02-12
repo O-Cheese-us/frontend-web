@@ -31,5 +31,28 @@
     </div>
   </div>
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCELGwrnPTQI38dQlztxcb_bD2w8pJBvlo",
+    authDomain: "o-cheese-us.firebaseapp.com",
+    databaseURL: "https://o-cheese-us.firebaseio.com",
+    projectId: "o-cheese-us",
+    storageBucket: "o-cheese-us.appspot.com",
+    messagingSenderId: "900960262358",
+    appId: "1:900960262358:web:b4ad9458e12163ac7d1177",
+    measurementId: "G-18YJ8L96FN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
