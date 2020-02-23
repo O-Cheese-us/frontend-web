@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vuetify Parallax Starter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-toolbar color="white">
+      <v-toolbar-title v-text="title"></v-toolbar-title>
+	  <img height="40" src="assets/logo.jpg"/>
+    </v-toolbar>
+    <v-content>
+      <section>
+        <v-parallax src="assets/kas3.jpg" height="600">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+            <img src="assets/logo2_small.png" alt="Vuetify.js" height="200">
+            <h1 class="white--text mb-2 display-1 text-center">o-cheese-us</h1>
+            <div class="subheading mb-4 text-center">Take it cheesy!</div>
+            <v-btn
+              class="mt-12"
+              color="blue lighten-2"
+              dark
+              large
+              href="/pre-made-themes"
+            >
+              Get Started
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-layout
+          column
+          wrap
+          class="my-12"
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-4">
+            <div class="text-center">
+              <h2 class="headline">The best way to let your friends know when you're enjoying delicious oven cheese</h2>
+              <span class="subheading">
+                (Unless you want to grow fat alone...)
+              </span>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="blue--text text--lighten-2">mdi-carrot</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Greasy & Cheesy</div>
+                    </v-card-title>
+                    <v-card-text>
+					  Tired of constantly being reminded to eat healthy and fat free? Not with us!
+					  We live after the Bavarian principle "Rund samma, gsund samma!" (If you're round, you're healthy)
+					  and we encourage you to eat as much oven cheese as you can as often as you want!
+					  Just press the button, dig in and forget about carrots, beeds and salad!
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="blue--text text--lighten-2">mdi-account-clock</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">Real Time Cheese Tracking</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Notify your friends even before the cheese is ready. Just schedule a time for when you're planning
+					  your cheese date and your fellow cheese lovers can plan their entire day accordingly. For example,
+					  if you get notified that there will be a crazy cheese orgy at Peter's place tonight, you will probably
+					  try to only eat two oven cheeses for lunch and not seven as usual.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="blue--text text--lighten-2">mdi-sprout</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Vegetarian & Lactose Free</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Lactose intolerant? Not a problem! Due to its intense riping process, oven cheese is lactose free,
+					  so you don't need to worry to fart your guts out when you invite your crush over. In contrary,
+					  a lot of our customers reported that enjoying oven cheese leads to increased libido and a higher sex drive.
+					  Thus, it is not unlikely that after using o-cheese-us you're going to shout out "Oh Cheese Us" all night!
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      <section>
+        <v-parallax src="assets/kas1.jpg" height="380">
+          <v-layout column align-center justify-center>
+            <div class="headline black--text mb-4 text-center">Sharing delicious oven cheese has never been easier</div>
+            <em class="black--text">Start cheesifying your life today!</em>
+            <v-btn
+              class="mt-12"
+              color="blue lighten-2"
+              dark
+              large
+              href="/pre-made-themes"
+            >
+              Get Started
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Company info</div>
+                </v-card-title>
+                <v-card-text>
+				  The founders of o-cheese-us were tired of all the stupid non-sense apps out there,
+				  so they decided to come up with an outstanding idea that should revolutionize the world as we 
+				  know it and change it for the better. 
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Contact us</div>
+                </v-card-title>
+                <v-list class="transparent">
+                  <v-list-item>
+                    <v-list-item-action>
+                      <v-icon class="blue--text text--lighten-2">mdi-map-marker</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>Munich, Germany</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-action>
+                      <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>support@o-cheese.us</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+    </v-content>
+  </v-app>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+ <script>
+   new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data () {
+      return {
+        title: ''
+      }
+    }
+  })
+ </script>
+</body>
+</html>
