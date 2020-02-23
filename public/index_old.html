@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+.row {
+  background: #f8f9fa;
+  margin-top: 20px;
+}
+
+.col {
+  border: solid 1px #6c757d;
+  padding: 10px;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6c757d;
+  font-weight: 900;
+  font-size: 190%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Rougette_Ofenk%C3%A4se_nach_dem_Fertigbacken_5059.jpg/800px-Rougette_Ofenk%C3%A4se_nach_dem_Fertigbacken_5059.jpg"  alt="Ofenkäse" style="width:100%;">
+        <div class="centered">
+		o-cheese-us
+		<br>
+			<button onclick="addCheese()">Kas gfressn!</button>
+		</div>
+		
+    </div>
+  </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCELGwrnPTQI38dQlztxcb_bD2w8pJBvlo",
+    authDomain: "o-cheese-us.firebaseapp.com",
+    databaseURL: "https://o-cheese-us.firebaseio.com",
+    projectId: "o-cheese-us",
+    storageBucket: "o-cheese-us.appspot.com",
+    messagingSenderId: "900960262358",
+    appId: "1:900960262358:web:b4ad9458e12163ac7d1177",
+    measurementId: "G-18YJ8L96FN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  function addCheese() {
+	const db = firebase.firestore();
+	const increment = firebase.firestore.FieldValue.increment(1);
+
+	// Document reference
+	const storyRef = db.collection('COUNTER').doc('GLOBAL');
+
+	// Update read count
+	storyRef.update({ wiavuigfressn: increment });
+}
+  
+	
+	
+</script>
+</body>
+</html>
